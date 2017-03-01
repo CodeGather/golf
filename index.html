@@ -11,20 +11,14 @@
     <script src="js/iscroll.js"></script>
     <script>
         $(function() {
-            TagNav('#tagnav', {
-                type: 'scrollToFirst',
-            });
+
             $('.weui_tab').tab();
             $('.searchbar_wrap').searchBar({
                 cancelText: "取消",
                 searchText: '关键字',
                 onfocus: function(value) {},
-                onblur: function(value) {
-
-                },
-                oninput: function(value) {
-
-                },
+                onblur: function(value) {},
+                oninput: function(value) {},
                 onsubmit: function(value) {},
                 oncancel: function() {},
                 onclear: function() {}
@@ -34,32 +28,7 @@
 </head>
 
 <body ontouchstart style="background-color: #f8f8f8;">
-    <div class="page-hd">
-        <h1 class="page-hd-title">
-            底部导航
-        </h1>
-        <p class="page-hd-desc">为了防止底部文字被挡住,需添加空行在导航上面,横向无限滚动需要加载iscroll.js</p>
-    </div>
-    <div id="tagnav" class="weui-navigator weui-navigator-wrapper">
-        <ul class="weui-navigator-list">
-            <li><a href="javascript:;">首页</a></li>
-            <li><a href="javascript:;">我爱中国</a></li>
-            <li><a href="javascript:;">国内</a></li>
-            <li><a href="javascript:;">国际</a></li>
-            <li><a href="javascript:;">军事</a></li>
-            <li><a href="javascript:;">社会</a></li>
-            <li><a href="javascript:;">娱乐</a></li>
-            <li><a href="javascript:;">女人</a></li>
-            <li><a href="javascript:;">体育</a></li>
-            <li><a href="javascript:;">科技</a></li>
-            <li><a href="javascript:;">互联网</a></li>
-            <li><a href="javascript:;">教育</a></li>
-            <li><a href="javascript:;">财经</a></li>
-            <li><a href="javascript:;">房产</a></li>
-            <li><a href="javascript:;">汽车</a></li>
-        </ul>
-    </div>
-    <div class="weui_cells_title" style="height:45px;">&nbsp;</div>
+    <br><br>
     <div class="weui_tab tab-bottom">
         <div class="weui_tab_bd">
             <div class="weui_tab_bd_item">
