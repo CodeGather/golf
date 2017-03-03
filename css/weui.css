@@ -2241,6 +2241,52 @@ input[type=search]::-webkit-search-results-decoration {
     border-radius: 50%;
 }
 
+.userpic {
+    position: relative;
+    -webkit-animation: change 2s linear infinite;
+}
+
+.weui-weixin-tit {
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+
+@-webkit-keyframes change {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    50% {
+        -webkit-transform: rotate(180deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@-moz-keyframes change {
+    0% {
+        -moz-transform: rotate(0deg);
+    }
+    50% {
+        -moz-transform: rotate(180deg);
+    }
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-ms-keyframes change {
+    0% {
+        -ms-transform: rotate(0deg);
+    }
+    50% {
+        -ms-transform: rotate(180deg);
+    }
+    100% {
+        -ms-transform: rotate(360deg);
+    }
+}
+
 .headS {
     background-color: #ff9900;
     padding: 1em 2em;
