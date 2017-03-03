@@ -2,7 +2,8 @@
 body,html {
 	height:100%;
 	-webkit-tap-highlight-color:transparent
-}a {
+}
+a {
   color: #18b4ed;
   text-decoration: none;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
