@@ -1,28 +1,14 @@
 @import "icon.css";
-<<<<<<< .mine
 body,
 html {
     height: 100%;
     -webkit-tap-highlight-color: transparent
-||||||| .r9
-body,html {
-	height:100%;
-	-webkit-tap-highlight-color:transparent
-}a {
-  color: #18b4ed;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-=======
-body,html {
-	height:100%;
-	-webkit-tap-highlight-color:transparent
 }
 
 a {
-  color: #18b4ed;
-  text-decoration: none;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
->>>>>>> .r13
+    color: #18b4ed;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 
 a {
@@ -3296,7 +3282,7 @@ weui-box*/
     display: box;
     display: -webkit-box;
     display: -webkit-flex;
-    display: display: flex
+    display: display: flex;
 }
 
 .weui_tab_nav .weui_nav_green {
