@@ -13,36 +13,42 @@
     <div class="weui_panel weui_panel_access">
         <div class="weui_cell_hd headS">
             <img class="userpic" src="images/icon_nav_msg.png" alt="用户头像">
-            <p>推荐人：<span id="referrer">张三</span></p>
-            <p>注意推荐人是否准确，一旦注册无法更改</p>
+            <h3 class="weui-weixin-title">推荐人：<span id="referrer">张三</span></h3>
+            <p>注意推荐人是否准确，一旦注册成功<br>系统自动为您建立关系，无法做修改操作</p>
         </div>
         <div class="weui_cell_bd"></div>
     </div>
     <form id="form">
         <div class="weui_cells weui_cells_form">
             <div class="weui_cell">
-                <div class="weui_cell_hd"><label class="weui_label">qq</label></div>
+                <div class="weui_cell_hd"><label class="weui_label">用户名：</label></div>
                 <div class="weui_cell_bd weui_cell_primary">
-                    <input class="weui_input" type="text" pattern="[0-9]*[\u4e00-\u9fa5]*" placeholder="请输入qq号" />
+                    <input class="weui_input" type="text" pattern="[0-9]*[\u4e00-\u9fa5]*" placeholder="请输入用户名" />
                 </div>
             </div>
             <div class="weui_cell">
-                <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+                <div class="weui_cell_hd"><label class="weui_label">手机号：</label></div>
                 <div class="weui_cell_bd weui_cell_primary">
-                    <input class="weui_input" type="tel" required pattern="[0-9]{11}" maxlength="11" placeholder="输入你现在的手机号" emptyTips="请输入手机号" notMatchTips="请输入正确的手机号">
+                    <input class="weui_input" type="tel" required pattern="[0-9]{11}" maxlength="11" placeholder="请输入手机号" emptyTips="请输入手机号" notMatchTips="请输入正确的手机号">
                 </div>
                 <div class="weui_cell_ft">
                     <i class="weui_icon_warn"></i>
                 </div>
             </div>
             <div class="weui_cell weui_vcode">
-                <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+                <div class="weui_cell_hd"><label class="weui_label">验证码：</label></div>
                 <div class="weui_cell_bd weui_cell_primary">
                     <input class="weui_input" type="number" required placeholder="点击验证码更换" tips="请输入验证码">
                 </div>
                 <div class="weui_cell_ft">
                     <i class="weui_icon_warn"></i>
                     <a href="javascript:;" class="weui-vcode-btn">获取验证码</a>
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">密&nbsp;&nbsp;&nbsp;&nbsp;码：</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" pattern="[0-9]*[\u4e00-\u9fa5]*" placeholder="请输入密码" />
                 </div>
             </div>
         </div>

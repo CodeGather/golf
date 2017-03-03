@@ -2231,13 +2231,17 @@ input[type=search]::-webkit-search-results-decoration {
     text-align: center;
 }
 
+
+/*注册页头部*/
+
 .userpic {
     width: 3.5em;
     height: 3.5em;
-    margin-top: 2.5em;
+    margin: 1em 0;
     border-radius: 50%;
 }
 
 .headS {
     background-color: #ff9900;
+    padding: 1em 2em;
 }
