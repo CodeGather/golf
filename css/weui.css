@@ -1042,10 +1042,6 @@ input.weui_btn_plain_default {
     -webkit-tap-highlight-color: transparent
 }
 
-.weui_tabbar_item.weui_bar_item_on .weui_tabbar_label {
-    color: #09bb07
-}
-
 .weui_tabbar_icon {
     margin: 0 auto;
     width: 24px;
@@ -1064,9 +1060,12 @@ input.weui_btn_plain_default {
 
 .weui_tabbar_label {
     text-align: center;
-    color: #888;
     font-size: 12px;
     font-weight: bold;
+}
+
+.weui_bar_item_on {
+    color: #09bb07
 }
 
 .weui_navbar {
@@ -2225,4 +2224,20 @@ input[type=search]::-webkit-search-decoration,
 input[type=search]::-webkit-search-results-button,
 input[type=search]::-webkit-search-results-decoration {
     display: none
+}
+
+.weui_cell_hd {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.userpic {
+    width: 3.5em;
+    height: 3.5em;
+    margin-top: 2.5em;
+    border-radius: 50%;
+}
+
+.headS {
+    background-color: #ff9900;
 }

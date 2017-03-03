@@ -1,3 +1,98 @@
+<<<<<<< .mine
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/weui.css" />
+    <link rel="stylesheet" href="css/weui2.css" />
+</head>
+
+<body ontouchstart>
+    <div class="weui_panel weui_panel_access">
+        <div class="weui_cell_hd headS">
+            <img class="userpic" src="images/1.jpg" alt="用户头像">
+            <p>推荐人：<span id="referrer">张三</span></p>
+            <p>注意推荐人是否准确，一旦注册无法更改</p>
+        </div>
+        <div class="weui_cell_bd"></div>
+    </div>
+    <form id="form">
+        <div class="weui_cells weui_cells_form">
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">qq</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="text" pattern="[0-9]*[\u4e00-\u9fa5]*" placeholder="请输入qq号" />
+                </div>
+            </div>
+            <div class="weui_cell">
+                <div class="weui_cell_hd"><label class="weui_label">手机号</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="tel" required pattern="[0-9]{11}" maxlength="11" placeholder="输入你现在的手机号" emptyTips="请输入手机号" notMatchTips="请输入正确的手机号">
+                </div>
+                <div class="weui_cell_ft">
+                    <i class="weui_icon_warn"></i>
+                </div>
+            </div>
+            <div class="weui_cell weui_vcode">
+                <div class="weui_cell_hd"><label class="weui_label">验证码</label></div>
+                <div class="weui_cell_bd weui_cell_primary">
+                    <input class="weui_input" type="number" required placeholder="点击验证码更换" tips="请输入验证码">
+                </div>
+                <div class="weui_cell_ft">
+                    <i class="weui_icon_warn"></i>
+                    <a href="javascript:;" class="weui-vcode-btn">获取验证码</a>
+                </div>
+            </div>
+        </div>
+        <label for="weuiAgree" class="weui-agree">
+            <input id="weuiAgree" class="weui-agree-checkbox" type="checkbox">
+            <span class="weui-agree-text">
+                阅读并同意<a href="javascript:void(0);">《相关条款》</a>
+            </span>
+        </label>
+        <div class="weui_btn_area">
+            <a id="formSubmitBtn" href="javascript:" class="weui_btn weui_btn_primary">立即注册</a>
+        </div>
+    </form>
+    <script src="js/zepto.min.js"></script>
+    <script>
+        var $form = $("#form");
+        $form.form();
+        $("#formSubmitBtn").on("click", function() {
+            $form.validate(function(error) {
+                if (error) {
+
+                } else {
+
+                    $.toptips('验证通过提交', 'ok');
+                }
+            });
+
+        });
+    </script>
+    <script type="text/javascript" src="js/vconsole.min.js"></script>
+</body>
+
+||||||| .r10
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>欢迎注册</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=0">
+    <link rel="stylesheet" href="css/weui.css" />
+    <link rel="stylesheet" href="css/weui2.css" />
+</head>
+
+<body>
+
+</body>
+
+=======
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,4 +121,5 @@
     <script type="text/javascript" src="js/vconsole.min.js"></script>
 </body>
 
+>>>>>>> .r13
 </html>
