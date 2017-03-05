@@ -13,6 +13,7 @@
 <body ontouchstart>
     <div class="weui_tab tab-bottom">
         <div class="weui_tab_bd">
+            <!--会员升级-->
             <div class="weui_tab_bd_item">
                 <div class="slide" id="slide2">
                     <ul style="transition: all 0s cubic-bezier(0.22, 0.69, 0.72, 0.88); transform: translate3d(0px, 0px, 0px);">
@@ -49,35 +50,49 @@
                     </div>
                 </div>
             </div>
+            <!--新手帮助-->
             <div class="weui_tab_bd_item">
                 <h3>新手帮助</h3>
             </div>
+            <!--推广中心-->
             <div class="weui_tab_bd_item">
-                <h3>分享推广</h3>
+                <div class="page-hd">
+                    <h1 class="page-hd-title">恭喜您二维码生成成功赶紧去推广吧！</h1>
+                </div>
+                <div class="page-bd-15">
+                    <a href='javascript:;' class=' weui_btn weui_btn_primary' id='qr'>生成</a>
+                    <div id="qrcodeimg" class='tcenter'></div>
+                </div>
             </div>
+            <!--个人中心-->
             <div class="weui_tab_bd_item">
                 <h3>个人中心</h3>
             </div>
         </div>
+        <!--底部导航菜单部分-->
         <div class="weui_tabbar">
+            <!--会员升级-->
             <a href="javascript:;" class="weui_tabbar_item weui_bar_item_on">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont icon-lishuaishengji"></i>
                 </div>
                 <p class="weui_tabbar_label">会员升级</p>
             </a>
+            <!--新手帮助-->
             <a href="javascript:;" class="weui_tabbar_item">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont icon-help"></i>
                 </div>
                 <p class="weui_tabbar_label">新手帮助</p>
             </a>
+            <!--分享推广-->
             <a href="javascript:;" class="weui_tabbar_item">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont icon-fenxiang"></i>
                 </div>
                 <p class="weui_tabbar_label">分享推广</p>
             </a>
+            <!--个人中心-->
             <a href="javascript:;" class="weui_tabbar_item">
                 <div class="weui_tabbar_icon">
                     <i class="iconfont icon-huiyuan1"></i>
@@ -90,6 +105,7 @@
     <script type="text/javascript" src="js/zepto.min.js"></script>
     <script type="text/javascript" src="js/iscroll.js"></script>
     <script type="text/javascript" src="js/swipe.js"></script>
+    <script type="text/javascript" src="js/qrcode.js"></script>
     <script type="text/javascript" src="js/golf.js"></script>
     <script>
         $(function() {
