@@ -108,7 +108,20 @@
     <script type="text/javascript" src="js/qrcode.js"></script>
     <script type="text/javascript" src="js/golf.js"></script>
     <script>
-        console.log(window.navigator.userAgent.toLowerCase());
+        function isWeiXin() {
+            var ua = window.navigator.userAgent.toLowerCase();
+            console.log(ua); //mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
+            if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+                return true;
+            } else {
+                return false;
+            }
+        }
+        if (isWeiXin()) {
+            console.log(" 是来自微信内置浏览器")
+        } else {
+            console.log("不是来自微信内置浏览器")
+        }
     </script>
 </body>
 
