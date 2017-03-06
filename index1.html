@@ -110,7 +110,7 @@
     <script>
         function isWeiXin() {
             var ua = window.navigator.userAgent.toLowerCase();
-            console.log(ua); //mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
+            //console.log(ua); //mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
             if (ua.match(/MicroMessenger/i) == 'micromessenger') {
                 return true;
             } else {
@@ -118,9 +118,9 @@
             }
         }
         if (isWeiXin()) {
-            console.log(" 是来自微信内置浏览器")
+            alert(" 是来自微信内置浏览器")
         } else {
-            console.log("不是来自微信内置浏览器")
+            window.location.href = "register.html";
         }
     </script>
 </body>
