@@ -2251,6 +2251,9 @@ input[type=search]::-webkit-search-results-decoration {
     margin-bottom: 14px;
 }
 
+
+/*头像旋转效果*/
+
 @-webkit-keyframes change {
     0% {
         -webkit-transform: rotate(0deg);
