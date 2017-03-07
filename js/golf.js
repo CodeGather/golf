@@ -4,7 +4,7 @@ $(function() {
 });
 //图片轮播效果
 $(function() {
-    $('#slide').swipeSlide({
+    $('#slide2').swipeSlide({
         autoSwipe: true, //自动切换默认是
         speed: 3000, //速度默认4000
         continuousScroll: true, //连续滚动默认否
@@ -24,3 +24,13 @@ var txt = "BEGIN:VCARD\r\nVERSION:3.0\r\nN:-Sql\r\nFN:moreshow\r\nTITLE:前端�
 $("#qr").click(function() {
     $("#qrcodeimg").empty().qrcode({ render: "image", ecLevel: "L", size: 300, background: "#fff", fill: "#000", text: txt });
 });
+//微信内置浏览器检测
+function isWeiXin() {
+    var ua = window.navigator.userAgent.toLowerCase();
+    //console.log(ua); //mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
+    if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        return true;
+    } else {
+        return false;
+    }
+}
