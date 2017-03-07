@@ -50,11 +50,76 @@
                         <a href="# " class="weui_btn weui_btn_primary ">省代</a>
                         <a href="# " class="weui_btn weui_btn_primary ">总代</a>
                     </div>
+                    <form id="form">
+                        <div class="weui_cells weui_cells_form">
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd"><label class="weui_label">收货人：</label></div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" type="text" required pattern="[\u2E80-\u9FFF]" maxlength="5" placeholder="请输入收货人" tips="请输入正确的收货人" />
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd"><label class="weui_label">手机号：</label></div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" type="tel" required pattern="[0-9]{11}" maxlength="11" placeholder="请输入手机号" emptyTips="请输入手机号" notMatchTips="请输入正确的手机号">
+                                </div>
+                                <div class="weui_cell_ft">
+                                    <i class="weui_icon_warn"></i>
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_hd"><label class="weui_label">微信号：</label></div>
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <input class="weui_input" type="number" required placeholder="请输入微信号" tips="请输入微信号">
+                                </div>
+                            </div>
+                            <div class="weui_cell">
+                                <div class="weui_cell_bd weui_cell_primary">
+                                    <textarea id="textarea" class="weui_textarea" placeholder="请输入详细地址" rows="3"></textarea>
+                                    <div class="weui_textarea_counter"><span id="count">0</span>/<span id="count_max">30</span></div>
+                                </div>
+                            </div>
+                        </div>
+                        <label for="weuiAgree" class="weui-agree">
+                            <input id="weuiAgree" class="weui-agree-checkbox" type="checkbox">
+                            <span class="weui-agree-text">阅读并同意<a href="javascript:void(0);">《相关条款》</a>
+                            </span>
+                        </label>
+                        <div class="weui_btn_area">
+                            <a id="formSubmitBtn" href="javascript:" class="weui_btn weui_btn_primary">立即购买</a>
+                        </div>
+                    </form>
                 </div>
             </div>
             <!--新手帮助-->
             <div class="weui_tab_bd_item ">
-                <h3>新手帮助</h3>
+                <h1 class="weui-weixin-title">新手帮助</h1>
+                <div class="weui-weixin-info">
+                    <!--meta-->
+                    <span class="weui-weixin-em">最新消息</span>
+                    <em class="weui-weixin-em">2015-06-29</em>
+                    <em class="weui-weixin-em">悠币</em>
+                    <a class="weui-weixin-a weui-weixin-nickname" href="javascript:void(0);">汉中工作室</a>
+                </div>
+                <!--meta结束-->
+                <div class="weui-weixin-content">
+                    <!--内容-->
+                    <p>36氪从一名不愿具名的投资界人士处获悉，滴滴快的正在参与东南亚打车应用GrabTaxi发起的新一轮融资，具体投资金额不明。GrabTaxi是主要面向东南亚地区的打车应用，也是Uber在该地区的最大竞争对手。有分析认为此举说明滴滴快的希望通过海外并购加速全球化布局，在全球范围内与Uber开展竞争。</p>
+                    <p>和Uber不同的是，GrabTaxi的核心服务是出租车叫车服务，另外也提供类似Uber的私人叫车在越南、印尼等地还提供当地特色的摩托车叫车。</p>
+                    <p>截至2014年年底，GrabTaxi已将业务拓展至东南亚的6个国家17个城市，是当地最流行的打车应用，该公司于2012年由出身豪门的华裔马来西亚人陈炳耀（Anthony Tan）创办。</p>
+                    <p>滴滴快的与GrabTaxi早有渊源。去年12月，日本软银向GrabTaxi注资2.5亿美元，成为该公司第一大股东。而软银恰好也是小桔快智（滴滴快的合并后的新公司）的投资方&mdash;&mdash;今年1月，软银领投了快的打车总额6亿美金的D轮融资。除软银之外，老虎基金也是GrabTaxi和滴滴快的的共同投资者。</p>
+                    <p>2014年GrabTaxi完成了四轮累计3.4亿美元的融资，投资方除了上面说到的软银和老虎基金之外，还包括淡马锡、纪源资本以及去哪儿等。</p>
+                    <p>上周，滴滴快的CEO程维在一封发给股东的邮件中透露，原计划15亿美元的新一轮融资获得了超额认购，因此公司计划增加融资规模，有猜测认为此轮融资将达到20亿美元。如果这一轮融资完成，滴滴快的将手握数十亿美元，完全有可能通过投资并购快速布局全球市场，从而与Uber开展新一轮竞争。</p>
+                </div>
+                <!--内容结束-->
+                <div class="weui-weixin-tools">
+                    <!--工具条-->
+                    <a href="javascript:void(0);">阅读原文</a>
+                    <div class="weui-weixin-read">阅读<span id="readnum">100000+</span> <span class="weui-weixin-read"><i class="weui-weixin-zan"></i><span class="weui-weixin-num">0</span></span>
+                    </div>
+                    <a href="javascript:void(0);" class="right" id="jubao">举报</a>
+                </div>
+                <!--工具条结束-->
             </div>
             <!--推广中心-->
             <div class="weui_tab_bd_item ">
@@ -68,7 +133,37 @@
             </div>
             <!--个人中心-->
             <div class="weui_tab_bd_item ">
-                <h3>个人中心</h3>
+                <a href="#" class="weui_a"><img src="images/1.png" alt="用户头像" class="circle pic"></a>
+                <span>高尔夫</span>
+            </div>
+            <!--表格记录-->
+            <div class="weui_tab_bd_item ">
+                <table class="weui-table weui-border-tb">
+                    <thead>
+                        <tr>
+                            <th>已购买</th>
+                            <th>状态</th>
+                            <th>会员到期时间</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>2014257777</td>
+                            <td>使用中</td>
+                            <td>2016-02-06</td>
+                        </tr>
+                        <tr>
+                            <td>2014257777</td>
+                            <td>待付款</td>
+                            <td><a href="#">付款</a></td>
+                        </tr>
+                        <tr>
+                            <td>2014257777</td>
+                            <td>待付款</td>
+                            <td><a href="#">付款</a></td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <!--底部导航菜单部分-->

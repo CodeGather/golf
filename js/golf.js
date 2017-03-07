@@ -33,4 +33,52 @@ function isWeiXin() {
     } else {
         return false;
     }
-}
+};
+//输入详细地址的字数提示
+$(function() {
+    var max = $('#count_max').text();
+    $('#textarea').on('input', function() {
+        var text = $(this).val();
+        var len = text.length;
+        $('#count').text(len);
+        if (len > max) {
+            $(this).closest('.weui_cell').addClass('weui_cell_warn');
+        } else {
+            $(this).closest('.weui_cell').removeClass('weui_cell_warn');
+        }
+    });
+});
+//购买信息的验证
+var $form = $("#form");
+$form.form();
+$("#formSubmitBtn").on("click", function() {
+    $("#form").validate(function(error) {
+        if (error) {
+
+        } else {
+            $.toptips('验证通过提交', 'ok');
+        }
+    });
+
+});
+//新手帮助文章
+$(function() {
+    $("img").addClass('weixin');
+    $('.weui-weixin-zan').click(function() {
+        if ($(this).hasClass('zaned')) {
+            $(this).removeClass('zaned');
+            var val = $(this).next().html();
+            if (parseInt(val) == 0) {
+                var i = 1;
+            } else {
+                var i = parseInt(val) - 1;
+            }
+            $(this).next().html(i);
+        } else {
+            $(this).addClass('zaned');
+            var val = $(this).next().html();
+            $(this).next().html(parseInt(val) + 1);
+            //ajax操作
+        }
+    });
+});

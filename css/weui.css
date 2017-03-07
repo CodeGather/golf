@@ -2289,6 +2289,18 @@ input[type=search]::-webkit-search-results-decoration {
     padding: 1em 2em;
 }
 
+
+/*代理级别标题说明文字*/
+
 .agency {
     margin-top: .5em;
+}
+
+.pic {
+    width: 5em;
+}
+
+.weui_a {
+    display: inline-block;
+    margin: 15px 15px;
 }
